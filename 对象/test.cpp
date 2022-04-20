@@ -323,39 +323,247 @@ using namespace std;
 //}
 
 
-class Person
-{
-public:
-	int m_age;
-	Person(int age)
-	{
-		m_age = age;
-	}
-	Person& PersonAgeAdd(Person p)
-	{
-		m_age = m_age + p.m_age;
-		return *this;
-	}
+//class Person
+//{
+//public:
+//	int m_age;
+//	Person(int age)
+//	{
+//		m_age = age;
+//	}
+//	Person& PersonAgeAdd(Person p)
+//	{
+//		m_age = m_age + p.m_age;
+//		return *this;
+//	}
+//
+//};
+//void test01()
+//{
+//	Person p1(20);
+//	cout << p1.m_age;
+//
+//}
+//void test02()
+//{
+//	Person p1(10);
+//	Person p2(20);
+//	/*p2.PersonAgeAdd(p2).PersonAgeAdd(p1).PersonAgeAdd(p1);*/
+//	p2.PersonAgeAdd(p2);
+//	cout << p2.m_age;
+//}
+//
+//int main()
+//{
+//
+//	/*test01();*/
+//	test02();
+//}
 
-};
-void test01()
-{
-	Person p1(20);
-	cout << p1.m_age;
+#include<math.h>
+//int main() 
+//{
+//    for (int i = 153; i<= 999; i++)
+//    {
+//        int sum = 0;
+//        int tmp = i;
+//        while (tmp)
+//        {
+//            sum = sum + pow(tmp % 10, 3);
+//            tmp = tmp / 10;
+//        }
+//        if (i == sum)
+//        {
+//            cout << i<<" ";
+//        }
+//    }
+//
+//    return 0;
+//}
+//
+//int main() {
+//    long long sum = 0;
+//    long long i = 9999999999;
+//    while (i)
+//    {
+//        sum = sum + i;
+//        i = i / 10;
+//    }
+//    cout << sum;
+//}
+#include<string>
+//int main()
+//{
+//	string name;
+//	//getline(cin, name);
+//	cin >> name;
+//	cout << name;
+//}
 
-}
-void test02()
-{
-	Person p1(10);
-	Person p2(20);
-	/*p2.PersonAgeAdd(p2).PersonAgeAdd(p1).PersonAgeAdd(p1);*/
-	p2.PersonAgeAdd(p2);
-	cout << p2.m_age;
-}
+//int main() {
+//
+//    char str[100] = { 0 };
+//    cin.getline(str, sizeof(str));
+//
+//    // write your code here......
+//
+//
+//    return 0;
+//}
 
-int main()
-{
 
-	/*test01();*/
-	test02();
-}
+//int mystrcmp(const char* src, const char* dst);
+//
+//int main() {
+//
+//    char s1[100] = { 0 };
+//    char s2[100] = { 0 };
+//
+//    cin.getline(s1, sizeof(s1));
+//    cin.getline(s2, sizeof(s2));
+//
+//    int ret = strcmp(s1, s2);
+//
+//    cout << ret << endl;
+//
+//    return 0;
+//}
+//
+////int mystrcmp(const char* src, const char* dst) {
+////
+////    // write your code here......
+////    while (*dst == *src)
+////    {
+////        if (*dst == '\0')
+////        {
+////            return 0;
+////        }
+////        dst++;
+////        src++;
+////    }
+////    if (*src > *dst)
+////    {
+////        return 1;
+////    }
+////    else if (*src < *dst)
+////    {
+////        return -1;
+////    }
+//}
+
+
+//class Student
+//{
+//public:
+//	int age;
+//	mutable int ClassNum;
+//
+//	void SetClassNum()const//const this指针(Person* const this)
+//	{
+//		ClassNum = 10;
+//	}
+//};
+//
+//void test1()
+//{
+//	const Student S1;
+//	S1.ClassNum = 101;
+//	cout << S1.ClassNum;
+//	S1.SetClassNum();
+//	cout << S1.ClassNum;
+//}
+//
+//
+//int main()
+//{
+//	test1();
+//	return 0;
+//}
+//class House;
+//class GoodGay;
+//
+// 
+//
+//
+//class House
+//{
+//	friend class GoodGay;
+//	//friend void GoodFriend(House& house);//定义友元函数
+//public:
+//	string LivingRoom;
+//	string Kitchen;
+//	House(string name1, string name2) :LivingRoom(name1), Bedroom(name2)
+//	{
+//
+//	}
+//	void getGoodGayNme(GoodGay& goodgay)
+//	{
+//		cout << goodgay.name;
+//	}
+//private:
+//	string Bedroom;
+//};
+//
+//
+////void GoodFriend(House& house)//通过友元函数访问隐私成员；
+////{
+////	cout << "你的朋友正在访问" << house.Bedroom;
+////}
+//class GoodGay
+//{
+//	friend class House;
+//public:
+//	void visit(House& your_house)
+//	{
+//		cout << "你的好朋友正在访问" << your_house.Bedroom;
+//	}
+//	GoodGay(string name)
+//	{
+//		this->name = name;
+//	}
+//private:
+//	string name;
+//
+//};
+//
+//
+//
+////void test1()
+////{
+////	House house1("客厅","卧室");
+////	cout << "你的朋友正在访问" << house1.LivingRoom;
+////	GoodFriend(house1);
+////}
+//
+//
+//void test2()
+//{
+//	House my_house("客厅", "卧室");
+//	cout << my_house.LivingRoom;
+//	GoodGay Gay1("zhangsan");
+//	Gay1.visit(my_house);
+//
+//}
+//
+//
+//int main()
+//{
+//	/*test1();*/
+//	test2();
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
